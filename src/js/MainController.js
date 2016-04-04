@@ -1,10 +1,10 @@
 ﻿angular.module("app", []);
 (function (module) {
-    module.controller("MainController", serviceName);
+    module.controller("MainController", controller);
 
-    serviceName.$inject = ["$http"];
+    controller.$inject = ["$http"];
 
-    function serviceName($http) {
+    function controller($http) {
         var promise = $http.get("ganttData.xml",
             {
                 transformResponse: function (data) {
